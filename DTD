@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE message [
+<!ELEMENT message (email, header, sender,recipiet)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT herder (#PCDATA)>
+<!ELEMENT sender (#PCDATA)>
+<!ELEMENT recipiet (#PCDATA)>
+]>
+<message>
+	<email reply="yes">
+		<header>
+			<sender>test@mu.edu
+			</sender>
+			<recipient>you@mu.edu
+			</recipient>
+			<recipient>anotheryou@mu.edu
+			</recipient>
+		</header>
+		<subject>Re: XML 
+		</subject>
+		<text>I'm working on my XML project right now <salutation>sincerely</salutation>
+		your student
+		</text>
+	</email>
+</message>

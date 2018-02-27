@@ -1,0 +1,13 @@
+<!ELEMENT message (email | letter )>
+<!ELEMENT email (header, subject, text )>
+<!ATTLIST email reply (yes|no) "no">
+<!ELEMENT header (sender, recipient*)>
+<!ELEMENT letter (letterhead, text )>
+<!ATTLIST letter reply (yes|no) "no">
+<!ELEMENT letterhead (sender, recipient*, date)>
+<!ELEMENT sender (#PCDATA )>
+<!ELEMENT recipient (#PCDATA )>
+<!ELEMENT subject (#PCDATA )>
+<!ELEMENT text (#PCDATA | salutation)*>
+<!ELEMENT date (#PCDATA )>
+<!ELEMENT salutation (#PCDATA)>
